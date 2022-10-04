@@ -8,11 +8,13 @@ const Input = ({
     isDisabled,
 }) => {
     return (
-        <fieldset>
-            <div className="flex flex-col items-center  my-3">
-                <label className="text-white">{name}</label>
+        <fieldset className="mt-5">
+            <div>
+                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    {name}
+                </label>
                 <input
-                    className="block w-[300px] text-white py-2.5 px-0 text-sm bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-0  peer"
+                    className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 dark:text-white focus:ring-blue-500 focus:border-blue-500"
                     type={type}
                     name={name}
                     placeholder={placeholder}
